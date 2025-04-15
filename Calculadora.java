@@ -73,7 +73,7 @@ public class Calculadora {
         panel.add(b);
     }
     private static float identificarPadrao(String line) {
-        Pattern p = Pattern.compile("(\\d+(\\.\\d+)?)([+\\-*/])(\\d+(\\.\\d+)?)");
+        Pattern p = Pattern.compile("(-?\\d+(\\.\\d+)?)([+\\-*/])(-?\\d+(\\.\\d+)?)");
         Matcher m = p.matcher(line);
     
         if (m.matches()) {
